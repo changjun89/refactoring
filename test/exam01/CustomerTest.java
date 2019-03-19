@@ -25,10 +25,10 @@ public class CustomerTest {
 
         assertEquals("이창준고객님의 대여 기록\n" +
                 "\t어린이무비\t1.5\n" +
-                "\t최신무비\t2.0\n" +
+                "\t최신무비\t6.0\n" +
                 "\t보통무비\t3.5\n" +
-                "누적 대여료: 7.0\n" +
-                "적립 포인트: 4\n",customer.statement());
+                "누적 대여료: 11.0\n" +
+                "적립 포인트: 4\n",customer.htmlStateMent());
     }
 
     @Test
@@ -42,9 +42,9 @@ public class CustomerTest {
 
         assertEquals("이창준고객님의 대여 기록\n" +
                 "\t어린이무비\t1.5\n" +
-                "\t최신무비\t2.0\n" +
+                "\t최신무비\t6.0\n" +
                 "\t보통무비\t3.5\n" +
-                "누적 대여료: 7.0\n" +
+                "누적 대여료: 11.0\n" +
                 "적립 포인트: 4\n",customer.htmlStateMent());
     }
 
