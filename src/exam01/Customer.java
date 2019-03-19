@@ -29,7 +29,7 @@ public class Customer {
             Rental each = (Rental) rentals.nextElement();
 
             //비디오 종류별 대여료 계산
-            thisAmount = amountFor(each);
+            thisAmount = each.getCharge();
             //적립 포인트를 1 포인트 증가
             frequentRenterPoints++;
 
@@ -53,7 +53,4 @@ public class Customer {
         return result;
     }
 
-    private double amountFor(Rental rental) {
-        return rental.getCharge();
-    }
 }
